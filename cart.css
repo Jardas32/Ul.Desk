@@ -1,0 +1,443 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: rgba(125, 125, 125, 0.955);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+    width: 1440px;
+    min-height: 1300px;
+    max-height: auto;
+}
+
+.box {
+    width: 1302px;
+    height: 54px;
+    display: flex;
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+.box .logo {
+    margin-top: 14px;
+    font-size: 26px;
+    font-weight: Medium;
+    font-family: "Poppins";
+}
+
+.box .img1 {
+    width: 20px;
+    height: 20px;
+    margin-top: 17px;
+    margin-left: 379px;
+}
+
+.box .img2 {
+    width: 25px;
+    height: 20px;
+    margin-top: 17px;
+    margin-left: 20px;
+}
+
+.box ul {
+    display: flex;
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.box ul li {
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+.box ul li a {
+    color: rgba(44, 56, 71, 1);
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 450;
+    transition: 0.4s;
+}
+
+.acounts {
+    margin-top: 13px;
+    margin-left: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+.counts {
+    position: absolute;
+    top: -7px;
+    right: -10px;
+    width: 14px;
+    height: 14px;
+    font-size: 12px;
+    border-radius: 100%;
+    background-color: red;
+    color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box ul li a:hover {
+    color: rgba(95, 184, 72, 1);
+}
+
+.box .bt {
+    background-color: rgba(73, 73, 73, 1);
+    width: 160px;
+    height: 54px;
+    border: none;
+    border-radius: 27px;
+    margin-left: 30px;
+    transition: 0.4s;
+}
+
+.box .bt:hover {
+    background-color: rgba(0, 0, 0, 0.854);
+}
+
+.box .bt a {
+    color: rgba(255, 255, 255, 1);
+    width: 160px;
+    height: 54px;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 27px;
+}
+
+.text {
+    position: absolute;
+    left: 135px;
+    top: 260px;
+    width: 596px;
+    height: 531px;
+    display: block;
+}
+
+.text .p1 {
+    color: rgba(24, 29, 25, 1);
+    font-size: 76px;
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+.p1 i {
+    color: rgba(95, 184, 72, 1);
+}
+
+.text .p2 {
+    margin-top: 30px;
+    color: rgba(24, 29, 25, 1);
+    width: 504px;
+    height: 102px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.text .bt1 {
+    margin-top: 50px;
+    background-color: rgba(100, 187, 71, 1);
+    width: 200px;
+    height: 64px;
+    border: none;
+    border-radius: 100px;
+    transition: 0.4s;
+}
+
+.text .bt1:hover {
+    background-color: rgb(67, 204, 21);
+}
+
+.text .bt1 a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Roboto";
+    padding: 16px 40px;
+}
+
+.textcart {
+    margin-top: 60px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    color: rgb(48, 47, 47);
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+             /* Carts */
+
+.carts {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgcarts {
+    display: none;
+    width: 250px;
+    object-fit: cover;
+}
+
+.cart {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}          
+
+.div-total {
+    width: 615px;
+    height: 40px;
+    display: none;
+    align-items: center;
+    justify-content: end;
+}
+
+.div-total span {
+    width: 90px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.totaltext {
+    letter-spacing: 1px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.spanprice {
+    margin-right: 76px;
+    font-weight: 600;
+}
+
+.newcard {
+    background-image: linear-gradient(to right, 
+    rgb(242, 221, 221), rgb(209, 242, 255));
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+    border: 3px solid rgb(226, 226, 226);
+}
+
+.imgcart {
+    margin-left: 5px;
+    width: 110px;
+    height: 110px;
+    filter: drop-shadow(0 0 4px rgb(56, 56, 56));
+}
+
+.titlecart {
+    color: rgb(41, 34, 34);
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: "Prata", sans-serif;
+    font-weight: 700;
+}
+
+.content {
+    background-color: red;
+    width: 200px;
+    height: 80px;
+    font-size: 18px;
+}
+
+.pricecart {
+    color: rgb(205, 8, 8);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.counters {
+    width: 80px;
+    height: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btcount {
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    border: none;
+    transition: all .3s;
+}
+
+.btMinus {
+    border-right: 1px solid rgb(206, 206, 206);
+}
+
+.btPlus {
+    border-left: 1px solid rgb(206, 206, 206);
+}
+
+.btcount:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(192, 192, 192);
+}
+
+.spanCounts {
+    background-color: #f4eeee;
+    width: 40px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.btcart {
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: rgb(229, 222, 222);
+    color: #fafafa;
+    width: 22px;
+    height: 22px;
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+    transition: all .6s;
+}
+
+.btcart:hover {
+    background-color: rgb(188, 179, 179);
+    color: rgb(58, 37, 37);
+}
+
+.box8 {
+    background-color: rgb(35, 35, 35);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 1440px;
+    height: 420px;
+    display: grid;
+    grid-template-columns: 262px 77px 63px 77px 125px;
+    column-gap: 115px;
+    justify-content: center;
+}
+
+.uldesk {
+    color: rgb(195, 200, 204);
+    margin-top: 120px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.div44 {
+    position: absolute;
+    z-index: 22;
+    background-color: rgba(100, 187, 71, 1);
+    bottom: 0px;
+    left: 0px;
+    width: 1440px;
+    height: 60px;
+    text-align: center;
+}
+
+.div44 .pcop {
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: Medium;
+}
+
+.div4 a {
+    color: rgb(230, 230, 230);
+    font-size: 22px;
+    font-family: "Roboto";
+    font-weight: 500;
+    position: absolute;
+    margin-top: 114px;
+    transition: 0.3s;
+}
+
+.div4 a:hover {
+    color: rgb(62, 255, 62);
+}
+
+.div4 .pt {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    margin-top: 162px;
+    font-size: 16px;
+    font-family: "Roboto";
+}
+
+.div4 .p0t {
+    position: absolute;
+    margin-top: 194px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: "Roboto";
+}
+
+.div4 .pptt {
+    position: absolute;
+    margin-top: 226px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: "Roboto";
+}
+
+.div4 img {
+    margin-top: 122px;
+}
+
+.div4 .p08 {
+    margin-top: 34px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: "Roboto";
+    font-weight: Medium;
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
